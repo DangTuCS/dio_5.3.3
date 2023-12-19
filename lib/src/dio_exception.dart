@@ -101,7 +101,7 @@ class DioException implements Exception {
       DioException(
         type: DioExceptionType.connectionTimeout,
         message: 'The request connection took '
-            'longer than ${timeout.inSeconds}. It was aborted.',
+            'longer than ${timeout.inSeconds} seconds. It was aborted.',
         requestOptions: requestOptions,
         response: null,
         error: error,
@@ -114,7 +114,7 @@ class DioException implements Exception {
       DioException(
         type: DioExceptionType.sendTimeout,
         message: 'The request took '
-            'longer than ${timeout.inSeconds} to send data. It was aborted.',
+            'longer than ${timeout.inSeconds} seconds to send data. It was aborted.',
         requestOptions: requestOptions,
         response: null,
         error: null,
@@ -128,7 +128,7 @@ class DioException implements Exception {
       DioException(
         type: DioExceptionType.receiveTimeout,
         message: 'The request took '
-            'longer than ${timeout.inSeconds} to receive data. It was aborted.',
+            'longer than ${timeout.inSeconds} seconds to receive data. It was aborted.',
         requestOptions: requestOptions,
         response: null,
         error: error,
